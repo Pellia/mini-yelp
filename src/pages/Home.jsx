@@ -21,12 +21,14 @@ const Home = () => {
         <div>
             <Searchbar />
             {loading && <h1>LOADING...</h1>}
-            {restaurantData &&
-                restaurantData.map((restaurant, index) => (
-                    <div key={index}>
-                        <RestaurantCard data={restaurant} />
-                    </div>
-                ))}
+            <div className="flex flex-col gap-3 items-center">
+                {restaurantData &&
+                    restaurantData.map((restaurant, index) => (
+                        <li key={index} className="list-none">
+                            <RestaurantCard data={restaurant} />
+                        </li>
+                    ))}
+            </div>
         </div>
     );
 };
