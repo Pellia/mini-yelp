@@ -1,0 +1,92 @@
+const dummyRes = [
+    {
+        id: 1,
+        name: "Sushi Heaven",
+        cityId: 1,
+        address: "123 Main Street 1",
+        phone: "123-456-7890",
+        email: "newrestaurant@example.com",
+        updatedAt: "2025-03-01T14:00:17.044Z",
+        createdAt: "2025-03-01T14:00:17.044Z",
+        tag: ["chinese", "japanese"],
+        city: ["hamburg", "berlin"],
+        comments: ["i love it", "hate it"],
+        reviews: [
+            {
+                username: "user1",
+                comment: "i love it",
+                rating: "4/5",
+            },
+            {
+                username: "user2",
+                comment: "good",
+                rating: "5/5",
+            },
+            {
+                username: "user3",
+                comment: "nope",
+                rating: "3/5",
+            },
+        ],
+    },
+    {
+        id: 2,
+        name: "Terazino",
+        cityId: 2,
+        address: "123 Main Street 2",
+        phone: "123-456-7890",
+        email: "newrestaurant@example.com",
+        updatedAt: "2025-03-01T14:00:17.044Z",
+        createdAt: "2025-03-01T14:00:17.044Z",
+        tag: ["french"],
+        city: ["frankfurt", "berlin"],
+        comments: ["i love it", "hate it"],
+        reviews: [
+            {
+                username: "user1",
+                comment: "i love it",
+                rating: "4/5",
+            },
+            {
+                username: "user2",
+                comment: "good",
+                rating: "5/5",
+            },
+            {
+                username: "user3",
+                comment: "nope",
+                rating: "3/5",
+            },
+        ],
+    },
+    {
+        id: 3,
+        name: "baguette de la fraunce",
+        cityId: 3,
+        address: "123 Main Street 3",
+        phone: "123-456-7890",
+        email: "newrestaurant@example.com",
+        updatedAt: "2025-03-01T14:00:17.044Z",
+        createdAt: "2025-03-01T14:00:17.044Z",
+        tag: ["french"],
+        city: ["paris"],
+        comments: ["i love it", "hate it"],
+        reviews: [
+            {
+                username: "user1",
+                comment: "i love it",
+                rating: "4/5",
+            },
+            {
+                username: "user2",
+                comment: "good",
+                rating: "5/5",
+            },
+            {
+                username: "user3",
+                comment: "nope",
+                rating: "3/5",
+            },
+        ],
+    },
+];

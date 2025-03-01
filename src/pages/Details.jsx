@@ -7,9 +7,17 @@ const Details = () => {
     const [restaurant, setRestaurant] = useState(null);
 
     const dummyRes = {
-        name: "rest1",
+        id: 1,
+        name: "Sushi Heaven",
+        cityId: 1,
+        address: "123 Main Street 1",
+        phone: "123-456-7890",
+        email: "newrestaurant@example.com",
+        updatedAt: "2025-03-01T14:00:17.044Z",
+        createdAt: "2025-03-01T14:00:17.044Z",
         tag: ["chinese", "japanese"],
         city: ["hamburg", "berlin"],
+        comments: ["i love it", "hate it"],
         reviews: [
             {
                 username: "user1",
@@ -37,21 +45,26 @@ const Details = () => {
 
     return (
         <div className="flex justify-center">
-            <div className="max-w-xl">
-                <hr className="border-2 border-neutral-300 mb-2 " />
+            <div className="max-w-3xl">
+                <hr className="border-2 border-neutral-200 mb-2 " />
                 {dummyRes && (
                     <div className="flex flex-col items-center gap-4">
                         <h2 className="text-4xl font-bold">{dummyRes.name}</h2>
+                        <div className="flex gap-2 font-bold">
+                            <p>Address: {dummyRes.address}</p>
+                            <p> | </p>
+                            <p>Phone: {dummyRes.phone}</p>
+                        </div>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, dignissimos cum accusantium enim assumenda ab totam officiis, maiores similique, autem sunt nulla officia
                             nostrum ea corrupti porro earum voluptatibus voluptatum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod nostrum et sequi qui in eveniet dolorem sit eos
                             ullam facilis dolores, vel libero dolorum fugit, consectetur molestias repellat magnam excepturi?
                         </p>
-                        <div className="flex gap-6">
+                        <div className="flex gap-6 items-center">
                             <h3>Location</h3>
                             <div className="flex gap-2">
                                 {dummyRes.city.map((c, i) => (
-                                    <p key={i} className="p-1 bg-green-400 text-white rounded-md">
+                                    <p key={i} className="p-1 bg-pink-400 text-white rounded-md">
                                         {c}
                                     </p>
                                 ))}
@@ -59,7 +72,7 @@ const Details = () => {
                             <h3>Tags</h3>
                             <div className="flex gap-2">
                                 {dummyRes.tag.map((t, i) => (
-                                    <p key={i} className="p-1 bg-green-400 text-white rounded-md">
+                                    <p key={i} className="p-1 bg-purple-400 text-white rounded-md">
                                         {t}
                                     </p>
                                 ))}
