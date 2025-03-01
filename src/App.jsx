@@ -12,6 +12,7 @@ const App = () => {
                 <Route element={<MainLayout />}>
                     <Route index element={<Home />} />
                     <Route path="login" element={<Login />} />
+                    <Route path="/details/:id" element={<Details />} />
                 </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>
