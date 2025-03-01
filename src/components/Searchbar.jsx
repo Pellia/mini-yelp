@@ -6,7 +6,7 @@ const Searchbar = () => {
                 <div className="flex gap-4 items-center">
                     <div>
                         <input type="radio" name="city-tag" id="name" value="name" />
-                        <label htmlFor="tag" className="text-lg">
+                        <label htmlFor="name" className="text-lg">
                             {" "}
                             Name
                         </label>

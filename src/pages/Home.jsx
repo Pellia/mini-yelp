@@ -6,6 +6,7 @@ const Home = () => {
     const url = "https://mocki.io/v1/3747a7fc-7bea-434d-bcf8-e86321cbd5c5";
     const [restaurantData, setRestaurantData] = useState(null);
     const [loading, setLoading] = useState(false);
+    const [searchParameter, setSearchParameter] = useState("name");
 
     useEffect(() => {
         setLoading(true);

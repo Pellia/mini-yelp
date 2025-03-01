@@ -6,6 +6,13 @@ const Details = () => {
     const { id } = useParams();
     const [restaurant, setRestaurant] = useState(null);
 
+    const dummyRes = {
+        name: "rest1",
+        tag: ["chinese", "japanese"],
+        city: ["hamburg", "berlin"],
+        comments: ["i love it", "hate it"],
+    };
+
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())
@@ -16,10 +23,9 @@ const Details = () => {
         <div>
             <h2>Details</h2>
 
-            {restaurant && (
+            {dummyRes && (
                 <div>
-                    <h4>Card</h4>
-                    <p>Description</p>
+                    <p>{dummyRes.name}</p>
                 </div>
             )}
         </div>
