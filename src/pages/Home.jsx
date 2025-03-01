@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import RestaurantCard from "../components/RestaurantCard";
 import Searchbar from "../components/Searchbar";
-import dummyRestaurant from "../data/Dummy";
 
 const Home = () => {
     const url = "https://mocki.io/v1/3747a7fc-7bea-434d-bcf8-e86321cbd5c5";
